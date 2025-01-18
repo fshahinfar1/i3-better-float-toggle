@@ -48,9 +48,13 @@ def main():
         window_id = focused['window']
         tmp = run('xprop', '-id', str(window_id)).decode()
         hint_size = get_size_hint(tmp)
-
+        min_size = [1920 // 4, 1080 // 3]
+        if hint_size is None:
+            size = min_size
+        else:
+            size = [max(a,b) for a,b in zip(hint_size, min_size)]
         run('i3-msg', '-t', 'command', 'floating', 'enable',
-            'resize', 'set', str(hint_size[0]), str(hint_size[1]))
+            'resize', 'set', str(size[0]), str(size[1]))
 
 if __name__ == '__main__':
     main()

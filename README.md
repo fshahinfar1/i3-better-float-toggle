@@ -1,13 +1,14 @@
 # About
 **i3 Better Float Toggle**
 
-When toggling a window to float mode, sometimes, i3 keeps the full-screen size
-for the floated window. That is counter intuitive for me. When toggle to
-floating mode, it is becuase I want to exit the current structure of the
-windows and see something behind it.
+Using [i3 window manager](https://i3wm.org/), when I toggle a window to float
+mode (a window that is not structured automatically), sometimes, the
+full-screen size is kept. That is counterintuitive for me. When I toggle to
+floating mode, it is because I want to remove the window from the current
+structure and see something behind it.
 
 Although it is possible to resize the window after entering the floating state,
-it is inconvinient. This script tries to provide an alternative approach by
+it is inconvenient. This script tries to provide an alternative approach by
 looking the programs hinted window size and resizing it.
 
 ## Install
