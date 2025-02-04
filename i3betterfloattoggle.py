@@ -129,6 +129,7 @@ def main():
     is_a_float = '_on' in focused['floating']
     if is_a_float:
         remember_win_size(focused)
+        run('i3-msg', '-t', 'command', 'border', 'pixel', '1')
         run('i3-msg', '-t', 'command', 'floating', 'disable')
     else:
         win_name = focused['window_properties']['instance']
@@ -149,6 +150,7 @@ def main():
             size = res
         run('i3-msg', '-t', 'command', 'floating', 'enable',
             'resize', 'set', str(size[0]), str(size[1]))
+        run('i3-msg', '-t', 'command', 'border', 'pixel', '5')
 
 if __name__ == '__main__':
     main()
