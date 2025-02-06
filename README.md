@@ -23,5 +23,6 @@ bindsym Mod1+Shift+n exec "python3 <script install dir>/i3betterfloattoggle.py"
 
 - [x] Remember the users last configuration for floating window size (inspired from [this post](https://www.reddit.com/r/i3wm/comments/l8tlxt/how_to_set_default_size_for_floating_windows/))
 - [x] Increase boarder size when floating (inspired from [this post](https://superuser.com/questions/1713101/i3-bigger-borders-on-floating-windows))
+- [ ] Remember the last place the window was (x, y) coordinate: sometime windows jump to the upper-left corner when switching to floating mode which is annoying, not useful
 
 > Feel free to open issue and submit suggestions; discussig how your workflow may need a better float-toggle function
